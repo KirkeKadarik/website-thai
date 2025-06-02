@@ -1,0 +1,171 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Aclonica", sans-serif;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  background-color: #000;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+
+.one {
+  background: rgba(0, 0, 0, 0.7) url('img/Toit.jpg') center center fixed;
+  background-size: cover;
+  background-blend-mode: darken;
+  color: white;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+  position: relative;
+}
+
+.site-logo {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  box-shadow: 0 3px 50px #FFDD00 inset;
+}
+
+.navbar .reservation {
+  background-color: #FFDD00;
+  color: #000;
+  border-radius: 4px;
+}
+
+.navbar .social-icon {
+  background-color: transparent;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .social-icon svg {
+  height: 32px;
+  width: 32px;
+  fill: #FFDD00;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.opening-hours h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.opening-hours p {
+  font-size: 18px;
+}
+
+
+.two {
+  background-color: #000;
+  color: white;
+}
+
+.meeskond {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 800px;
+  height: auto;
+}
+
+.lable {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #FFDD00;
+  text-align: center;
+  font-size: 18px;
+}
+
+.content1 {
+  position: absolute;
+  top: 55%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: left;
+  font-size: 15px;
+  width: 40%;
+  line-height: 1.5;
+}
+
+
+.three {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.three h1 {
+  color: #FFDD00;
+  margin-bottom: 45px;
+}
+
+.three iframe {
+  width: 70%;
+  height: 500px;
+  filter: invert(100%);
+}
